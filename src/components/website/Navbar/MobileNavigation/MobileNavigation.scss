@@ -1,0 +1,46 @@
+@use "../../../../scss/" as *;
+.mobile__nav {
+  display: none;
+}
+
+@include mobile {
+  .mobile__nav {
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    z-index: 10;
+    @include flex(center, center);
+    width: 100vw;
+    height: $mb-header-height * 0.8;
+    background-color: $white;
+    padding: 15px 25px;
+    @include xs-mobile-width {
+      padding: 0 20px;
+    }
+    box-shadow: $box-shadow;
+    &_main {
+      width: 100%;
+      @include flex(center, space-between);
+      .bottom {
+        flex: 1, 1 0%;
+        position: relative;
+        padding-top: 5px;
+        @include flex(center, center, column);
+        .icon {
+          font-size: $base-size * 1.4;
+          @include xs-mobile-width {
+            font-size: $base-size * 1.2;
+          }
+        }
+        .textfill {
+          font-weight: 800;
+        }
+      }
+      .bottom_nav_active {
+        .icon {
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+}

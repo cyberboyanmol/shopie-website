@@ -1,0 +1,83 @@
+@use "../../../../scss/" as *;
+
+.Mobile_top {
+  width: 100%;
+  position: Sticky;
+  top: 0;
+  z-index: 100;
+  background-color: $white;
+  .Mobile_top_container {
+    display: none;
+    @include mobile {
+      width: 100%;
+      padding: 12px 10px;
+      // box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%);
+      border-bottom: 0.5px solid rgba(18, 18, 18, 0.12);
+      @include flex(center, flex-start);
+
+      .left {
+        flex-basis: 60%;
+        @include flex(center, flex-start);
+        gap: 1.5rem;
+        .back {
+          font-size: $base-size * 1.6;
+          align-self: flex-start;
+          margin-left: 10px;
+        }
+        .title {
+          overflow: hidden;
+          white-space: nowrap;
+          width: 80%;
+          text-overflow: ellipsis;
+          font-size: $base-size * 1.3;
+          text-transform: capitalize;
+          @include xs-mobile-width {
+            font-size: $base-size;
+          }
+        }
+      }
+      .right {
+        flex-basis: 40%;
+        align-self: flex-end;
+        margin-right: 20px;
+        @include flex(center, flex-end);
+        gap: 0.9rem;
+        .Mobile_top_container_icon {
+          @include flex(center, flex-end);
+          font-size: $base-size * 1.5;
+        }
+      }
+    }
+  }
+  .breadcrumbs {
+    @include mobile {
+      display: none;
+    }
+    padding: 5px 10%;
+    margin: 1rem auto;
+    @include flex(center, flex-start);
+    gap: 0.5rem;
+
+    .breadcrumb {
+      text-transform: capitalize;
+      font-size: $base-size * 0.9;
+      color: $gray-text;
+      font-family: "Work Sans", sans-serif;
+      &:hover {
+        color: $green;
+      }
+      &:not(:first-child)::before {
+        content: "/";
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+// .scrolled {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 100;
+//   background-color: $white;
+// }

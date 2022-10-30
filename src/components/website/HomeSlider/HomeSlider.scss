@@ -1,0 +1,28 @@
+@use "../../../scss/" as *;
+
+.HeroSlider {
+  width: 100%;
+  position: relative;
+
+  .SliderControls {
+    position: absolute;
+    bottom: 40px;
+    cursor: pointer;
+
+    @include flex(center, center);
+    @include mobile {
+      bottom: 20px;
+    }
+    gap: 2.2rem;
+    width: 100%;
+
+    i:hover {
+      color: $theme-color;
+    }
+    .activeSliderItem {
+      i {
+        color: $theme-color;
+      }
+    }
+  }
+}

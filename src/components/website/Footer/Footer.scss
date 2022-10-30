@@ -1,0 +1,59 @@
+@use "../../../scss/" as *;
+
+.footer {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #f9f9f9;
+  &__columns {
+    width: 85%;
+    padding: 3rem 0 2rem;
+    margin: auto;
+    @include flex(flex-start, space-around);
+    gap: 25px;
+
+    @include mobile {
+      flex-direction: column;
+
+      padding: 3rem 10%;
+    }
+  }
+  .CopyRight {
+    @include flex(center, center, column);
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+    @include mobile {
+      padding-bottom: 7rem;
+    }
+    .right {
+      font-size: $base-size;
+      color: mix($white, $black, 50);
+    }
+    .creator {
+      font-size: $base-size;
+      color: $theme-color;
+    }
+  }
+}
+
+//   .column h4 {
+//     text-align: center
+//   }
+//   .rights {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 30px;
+//     text-align: center
+
+//   }
+//   .rights h5 {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 10px
+//   }
+//   @media (max-width: 750px) {
+//     .footer {
+//       padding: 40px
+//     }
+//   }

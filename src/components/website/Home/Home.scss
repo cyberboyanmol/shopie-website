@@ -1,0 +1,211 @@
+@use "./../../../scss/" as *;
+
+.topCategories {
+  width: 100%;
+  margin: 2rem auto;
+  @include flex(center, center, column);
+
+  .topCategories_container {
+    width: 80%;
+    @include flex(center, center);
+    margin: auto auto;
+    gap: 4rem;
+    @include laptop {
+      width: 100%;
+      gap: 2.5rem;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
+    .categorie {
+      border: 1px solid #e6e6e6;
+      padding: 10rem 15rem;
+      background-color: #f8f8f8f8;
+      @include xl-laptop {
+        padding: 8rem 12rem;
+      }
+      @include laptop {
+        padding: 6rem 7.5rem;
+      }
+      @include mobile {
+        flex-direction: column;
+        width: 90%;
+        padding: 7rem 0;
+        background-size: cover;
+      }
+
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 6px;
+
+      @include flex(center, center, column);
+
+      .categorieText,
+      .categorieSubtitle,
+      .categorieBtn {
+        transition: all 0.4s;
+        position: absolute;
+        left: 20px;
+      }
+
+      .categorieText {
+        top: 30px;
+        font-family: "Playfair Display", serif;
+        font-size: $base-size * 1.8;
+        font-weight: 900;
+      }
+      .categorieSubtitle {
+        top: 70px;
+        font-size: $base-size * 1.1;
+        font-weight: 500;
+      }
+      .categorieBtn {
+        bottom: 0px;
+        transition: all 1.2s;
+        left: 20px;
+        opacity: 0;
+        font-size: $base-size;
+        @include flex(center, center, column);
+      }
+      .line {
+        width: 0;
+        position: absolute;
+        transition: all 0.6s;
+        left: 20px;
+        bottom: 0;
+        opacity: 0;
+        height: 1.5px;
+        background-color: $black;
+      }
+
+      &:hover {
+        box-shadow: $box-shadow;
+        .categorieBtn {
+          bottom: 30px;
+
+          transition: all 0.6s;
+          opacity: 1;
+          color: $black;
+        }
+        .line {
+          transition: all 0.6s;
+          width: 20%;
+
+          opacity: 0.9;
+          bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.DealOfDay {
+  width: 100%;
+  margin: 2rem auto;
+  @include flex(center, center, column);
+
+  .CountDown {
+    margin: 0rem 0 2rem;
+    border-radius: 2px;
+    padding: 5px;
+    @include flex(center, center);
+    background-color: $black;
+    color: $white;
+    .timerbox {
+      padding: 10px;
+      border: 1px solid $white;
+      @include flex(center, center, column);
+    }
+    .TimerExpire {
+      padding: 10px;
+    }
+  }
+  // .ProductContainer {
+  //   width: 85%;
+  //   margin: 0 auto;
+
+  //   @include flex(center, space-around, row, wrap);
+  //   row-gap: 2rem;
+  //   gap: 1rem;
+  //   @include laptop {
+  //     width: 90%;
+  //     gap: 1rem;
+  //   }
+
+  //   @include md-tablet {
+  //     width: 100%;
+  //     row-gap: 2rem;
+  //     justify-content: space-evenly;
+  //   }
+  //   @include mobile {
+  //     justify-content: space-around;
+  //   }
+  //   @include sm-mobile {
+  //     width: 100%;
+  //     gap: 5px;
+  //     row-gap: 10px;
+  //     justify-content: space-evenly;
+  //   }
+  //   @include xs-mobile-width {
+  //     gap: 5px;
+  //     row-gap: 10px;
+  //     justify-content: space-around;
+  //   }
+  //   @include xxs-mobile-width {
+  //     gap: 4px;
+  //     row-gap: 10px;
+  //     justify-content: initial;
+  //   }
+  // }
+}
+
+.NewArrival__conatiner {
+  width: 100%;
+  margin: 2rem auto;
+  @include flex(center, center, column);
+  .Filter_link {
+    @include flex(center, center);
+    gap: 2rem;
+    margin: 1rem auto 2rem;
+    cursor: pointer;
+
+    .Link {
+      color: mix($white, $black, 40);
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+      font-size: $base-size;
+      padding: 5px 10px;
+      background-color: transparent;
+      // border: 1px solid $theme-color;
+      border-radius: 5px;
+      transition: all 0.4s;
+      @include xs-mobile-width {
+        padding: 0px;
+        border: none;
+        border-radius: 0px;
+      }
+      &:hover {
+        color: $white;
+
+        background-color: $theme-color;
+        @include xs-mobile-width {
+          background-color: transparent;
+          color: $theme-color;
+        }
+      }
+    }
+    .ActiveFilter_Link {
+      color: $white;
+      background-color: $theme-color;
+      @include xs-mobile-width {
+        background-color: transparent;
+        color: $theme-color;
+      }
+    }
+  }
+  .button {
+    margin: 2rem auto;
+  }
+}

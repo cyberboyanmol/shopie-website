@@ -1,0 +1,31 @@
+@use "../../../../scss/" as *;
+
+.HeadingHelper {
+  @include flex(center, center, column);
+  gap: 0.2rem;
+  margin: 1rem 0 2rem;
+
+  .Categories_heading {
+    @include flex(center, center);
+    gap: 1rem;
+    .heading {
+      font-size: $base-size * 1.8;
+      text-transform: capitalize;
+      color: $shadow;
+      @include sm-mobile {
+        font-size: $base-size * 1.4;
+      }
+    }
+    .design {
+      width: 150px;
+      height: 1.8px;
+      background-color: $gray-text;
+      @include mobile {
+        width: 50px;
+      }
+    }
+  }
+  .subtitle {
+    color: gray;
+  }
+}

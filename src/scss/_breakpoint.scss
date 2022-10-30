@@ -1,0 +1,48 @@
+@use "./variables" as *;
+//devices breakpoints
+
+@mixin xl-laptop {
+  @media only screen and (max-width: $xl-laptop-width) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media only screen and (max-width: $laptop-width) {
+    @content;
+  }
+}
+@mixin md-tablet {
+  @media only screen and (max-width: $md-tablet-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin sm-mobile {
+  @media only screen and (max-width: $sm-mobile-width) {
+    @content;
+  }
+}
+
+@mixin xs-mobile-width {
+  @media only screen and (max-width: $xs-mobile-width) {
+    @content;
+  }
+}
+
+@mixin xxs-mobile-width {
+  @media only screen and (max-width: $xxs-mobile-width) {
+    @content;
+  }
+}

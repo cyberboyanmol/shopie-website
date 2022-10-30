@@ -1,0 +1,85 @@
+@use "../../../../scss/" as *;
+
+.FooterColumn {
+  @include flex(flex-start, initial, column);
+  width: 100%;
+  .FooterColumn_logo {
+    width: 100%;
+    @include flex(flex-start, center, column);
+    gap: 20px;
+    @include mobile {
+      margin-bottom: 20px;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .logo_div {
+      width: 80%;
+      h4 {
+        text-align: start;
+        text-transform: uppercase;
+      }
+      .paymentMethod {
+        cursor: pointer;
+        @include flex(flex-start, flex-start, row);
+        gap: 0.2rem;
+        img {
+          width: 45px;
+          height: 35px;
+          border-radius: 5px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .FooterColumn_secondary {
+    width: 100%;
+    // @include flex(flex-start, center, column);
+    .title {
+      @include flex(center, space-between);
+      width: 100%;
+      i {
+        display: none;
+      }
+      @include mobile {
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          color: $theme-color;
+        }
+        i {
+          display: block;
+        }
+      }
+    }
+    .activetitle {
+      i {
+        @include mobile {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    .link_div {
+      @include flex(flex-start, center, column);
+      overflow: hidden;
+      max-height: 500px;
+      transition: all 0.3s;
+    
+      a {
+        margin: 10px 0;
+        font-size: 13px;
+        &:hover {
+            color: $theme-color;
+          }
+      }
+      @include mobile {
+        max-height: 0;
+        margin-top: 20px;
+        padding-left: 20px;
+      }
+    }
+    .activecol {
+      max-height: 500px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@use "./scss/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Playfair+Display:wght@500&family=Work+Sans:wght@100;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  scroll-behavior: smooth;
+  font-family: "Nunito", sans-serif;
+
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  // background-color: #000;
+  @include tablet {
+    font-size: 90%;
+  }
+}
+
+.app {
+  min-height: 100vh;
+  max-width: 1920px;
+  margin: auto auto;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+}
+i {
+  cursor: pointer;
+}
+.nav_active {
+  color: $theme-color;
+}
+
+input,
+button {
+  outline: none;
+  transition: all 0.3s;
+  border-radius: 0;
+}
+::selection {
+  background-color: $theme-color;
+  color: black;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $theme-color;
+  border-radius: 10px;
+}

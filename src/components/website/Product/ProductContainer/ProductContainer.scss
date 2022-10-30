@@ -1,0 +1,39 @@
+@use "../../../../scss/" as *;
+
+.ProductContainer {
+  width: 85%;
+  margin: 0 auto;
+
+  @include flex(center, space-around, row, wrap);
+  row-gap: 2rem;
+  gap: 1rem;
+  @include laptop {
+    width: 90%;
+    gap: 1rem;
+  }
+
+  @include md-tablet {
+    width: 100%;
+    row-gap: 2rem;
+    justify-content: space-evenly;
+  }
+  @include mobile {
+    justify-content: space-around;
+  }
+  @include sm-mobile {
+    width: 100%;
+    gap: 5px;
+    row-gap: 10px;
+    justify-content: space-evenly;
+  }
+  @include xs-mobile-width {
+    gap: 5px;
+    row-gap: 10px;
+    justify-content: space-around;
+  }
+  @include xxs-mobile-width {
+    gap: 4px;
+    row-gap: 10px;
+    justify-content: initial;
+  }
+}

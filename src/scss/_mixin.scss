@@ -1,0 +1,14 @@
+@use "./variables" as *;
+
+@mixin flex(
+  $align-items: flex-start,
+  $justify-content: flex-start,
+  $flex-direction: row,
+  $flex-wrap: nowrap
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}

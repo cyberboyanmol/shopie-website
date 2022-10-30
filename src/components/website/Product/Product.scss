@@ -1,0 +1,216 @@
+@use "../../../scss/" as *;
+.Product {
+  width: 230px;
+  border-radius: 5px;
+  @include mobile {
+    width: 200px;
+  }
+  @include sm-mobile {
+    width: 185px;
+  }
+  @include xs-mobile-width {
+    width: 170px;
+  }
+  @include xxs-mobile-width {
+    width: 80%;
+    margin: auto;
+  }
+  &:hover {
+    box-shadow: $light-shadow;
+  }
+  position: relative;
+  background-color: $white;
+  .Product__main_container {
+    width: 100%;
+
+    @include flex(center, center, column);
+    .Product__top {
+      width: 100%;
+
+      .trending {
+        position: absolute;
+        text-transform: uppercase;
+        bottom: 290px;
+        left: 0px;
+        padding: 1px 2px;
+        background-color: mix($black, $white, 80);
+        color: $white;
+        border-radius: 2px;
+        letter-spacing: 1px;
+        font-size: $base-size * 0.7;
+        @include sm-mobile {
+          bottom: 270px;
+          font-size: $base-size * 0.6;
+        }
+      }
+
+      .image {
+        width: 100%;
+
+        img {
+          transition: all 0.5s;
+          height: 290px;
+          @include sm-mobile {
+            height: 270px;
+          }
+          @include xxs-mobile-width {
+            object-fit: cover;
+            height: 290px;
+          }
+          object-fit: cover;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          -webkit-user-drag: none;
+          width: 100%;
+        }
+      }
+      .top_control {
+        width: 100%;
+        position: absolute;
+        @include flex(center);
+
+        .whishlist {
+          position: absolute;
+          bottom: 280px;
+          right: 10px;
+          padding: 5px;
+          z-index: 4;
+          font-size: $base-size * 1.2;
+          cursor: pointer;
+          border-radius: 50%;
+          @include flex(center, center, column);
+          background-color: $white;
+          @include sm-mobile {
+            bottom: 40px;
+            right: 10px;
+            font-size: $base-size;
+          }
+
+          &:hover {
+            transform: scale(1.1);
+
+            transition: all 0.3s;
+            .icon_wish {
+              font-weight: 700;
+              color: $red;
+            }
+          }
+        }
+
+        .averageRating {
+          bottom: 40px;
+          left: 10px;
+          @include flex(center, center);
+          gap: 0.2rem;
+          background-color: hsla(0, 0%, 100%, 0.8);
+          padding: 4px 7px;
+          border-radius: 2px;
+          font-size: $base-size * 0.85;
+          .icon {
+            color: $green-light;
+          }
+          @include sm-mobile {
+            font-size: $base-size * 0.7;
+          }
+        }
+        .quickView {
+          width: 100%;
+          bottom: 30px;
+
+          padding: 10px 20px;
+          opacity: 0;
+          position: absolute;
+          text-align: center;
+          transition: all 0.2s;
+          font-weight: 700;
+          cursor: pointer;
+          background-color: hsla(0, 0%, 100%, 0.92);
+          color: $quick;
+          @include mobile {
+            display: none;
+          }
+        }
+      }
+      &:hover {
+        .quickView {
+          opacity: 1;
+        }
+      }
+    }
+    .Product__bottom {
+      width: 100%;
+      margin-top: 5px;
+      padding: 0 10px 20px;
+      gap: 0.4rem;
+      @include flex(flex-start, center, column);
+      .BrandName {
+        width: 100%;
+        font-size: $base-size;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $black;
+        font-family: "Work Sans", sans-serif;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #282c3f;
+        white-space: nowrap;
+        @include sm-mobile {
+          font-size: $base-size * 0.8;
+        }
+      }
+      .ProductName {
+        font-size: $base-size * 0.9;
+        font-weight: 400;
+        width: 100%;
+        color: $black;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        text-overflow: ellipsis;
+        @include sm-mobile {
+          font-size: $base-size * 0.8;
+        }
+      }
+      .pricetag {
+        width: 100%;
+        @include flex(center, center);
+        gap: 7px;
+
+        .discountPrice {
+          color: $black;
+          font-size: $base-size;
+          font-weight: 700;
+          @include sm-mobile {
+            font-size: $base-size * 0.9;
+          }
+        }
+        .price {
+          color: mix($black, $white, 70);
+          font-size: $base-size * 0.8;
+          font-weight: 500;
+          text-decoration: line-through;
+          @include sm-mobile {
+            font-size: $base-size * 0.7;
+          }
+        }
+        .offer {
+          color: $green;
+          font-size: $base-size * 0.8;
+          font-weight: 700;
+          @include sm-mobile {
+            font-size: $base-size * 0.7;
+          }
+        }
+      }
+      .nosaleprice {
+        font-size: $base-size;
+        font-weight: 700;
+      }
+      .stockLeft {
+        font-size: $base-size * 0.8;
+        font-weight: 600;
+        color: $red;
+      }
+    }
+  }
+}

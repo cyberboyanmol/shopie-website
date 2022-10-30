@@ -1,0 +1,33 @@
+@use "../../../../scss/" as *;
+.navbarlinks {
+  span {
+    text-transform: uppercase;
+    font-size: $base-size*0.9;
+    @include tablet {
+      font-size: $base-size * 0.8;
+    }
+  }
+  &:hover {
+    color: $theme-color;
+    & > div {
+      width: 80%;
+    }
+  }
+
+  div {
+    position: absolute;
+    display: block;
+    width: 0%;
+    height: 0.8px;
+    background-color: $theme-color;
+    transition: all 0.3s;
+  }
+}
+
+.nav_active {
+  color: $theme-color;
+  font-weight: 500;
+  & > div {
+    width: 80%;
+  }
+}

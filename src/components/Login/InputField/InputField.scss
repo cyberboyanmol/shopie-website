@@ -1,0 +1,126 @@
+@use "../../../scss/" as *;
+
+.InputContainer {
+  width: 100%;
+  @include flex(center, center, column);
+  position: relative;
+  & > .error {
+    position: absolute;
+    top: 39px;
+    color: red;
+    font-size: $base-size * 0.79;
+    font-weight: 400;
+    left: 5px;
+    @include mobile {
+      top: 53px;
+    }
+  }
+
+  &_div {
+    width: 100%;
+    @include flex(center);
+    position: relative;
+
+    & > i {
+      z-index: 100;
+      font-size: $base-size * 1.2;
+      position: absolute;
+    }
+    & > .icon {
+      left: 10px;
+    }
+
+    & > .hide {
+      right: 5px;
+      opacity: 0;
+      cursor: pointer;
+      @include mobile {
+        font-size: $base-size * 0.999;
+      }
+    }
+    &_field {
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      cursor: text;
+      border-radius: 5px;
+      width: 100%;
+      z-index: 50;
+      color: mix($white, $black, 20);
+      font-size: $base-size * 1.1;
+      border: 1px solid mix($white, $black, 70);
+      padding: 10px 30px 5px 35px;
+      @include mobile {
+        padding: 15px 30px 15px 35px;
+      }
+    }
+    &_field {
+      background-color: transparent;
+    }
+
+    &_field[type="password"] {
+      padding-right: 80px;
+    }
+    &_field:focus ~ .hide {
+      opacity: 1;
+    }
+    &_field:valid ~ .hide {
+      opacity: 1;
+    }
+    &_field:focus ~ i {
+      color: $theme-color;
+    }
+    &_field:focus {
+      border-color: $theme-color;
+    }
+  }
+}
+.InputContainer_div {
+  .error {
+    color: #f5463d;
+    border-color: #f5463d;
+  }
+}
+
+.InputContainer_div_field ~ .input_label {
+  position: absolute;
+  color: mix($white, $black, 60);
+  left: 35px;
+  cursor: text;
+  font-weight: 500;
+}
+
+.InputContainer_div_field:valid ~ .input_label {
+  bottom: 29px;
+  left: 25px;
+  z-index: 200;
+  font-size: $base-size * 0.8;
+  color: $theme-color;
+  // background-color: $light-gray;
+  background-color: $bg-color;
+
+  @include mobile {
+    font-size: $base-size * 0.9;
+    bottom: 43px;
+  }
+}
+.InputContainer_div_field:focus ~ .input_label {
+  color: $theme-color;
+  bottom: 29px;
+
+  left: 25px;
+  z-index: 200;
+  font-size: $base-size * 0.8;
+  // background-color: $light-gray;
+  background-color: $bg-color;
+  @include mobile {
+    font-size: $base-size * 0.9;
+    bottom: 43px;
+  }
+}
+
+@include mobile {
+  .InputContainer_div_field {
+    box-shadow: none;
+    width: 100%;
+  }
+}

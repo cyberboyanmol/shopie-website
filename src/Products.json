@@ -1,0 +1,491 @@
+[
+  {
+    "SellerId": "Robin_anmol",
+    "gender": "Boys",
+    "percent": 10,
+    "productDetails": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+    "shortdescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+    "season": "Summer",
+    "img": "https://i.imgur.com/h2sP3bN.jpg",
+    "Totalstock": 0,
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+    "name": "Kids's Shorts",
+    "sale": true,
+    "DealOfday": true,
+    "productId": "ANMOLGANGWAR",
+    "priceRange": "$0-$49",
+    "MrpPrice": 8.99,
+    "imgs": [
+      "https://i.imgur.com/ETqGxMl.jpg",
+      "https://i.imgur.com/hGjBJNQ.jpg"
+    ],
+    "averageRating": 3,
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "coouponcode": "coupon2", "discount": 20 }
+    ],
+    "costToProduce": 1.04,
+    "Totalsold": 0,
+    "date": " new Date()",
+    "BrandName": "Shopie"
+  },
+
+  {
+    "SellerId": "Robin_anmol",
+    "gender": "Boys",
+    "percent": 10,
+    "productDetails": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+    "shortdescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+    "season": "Summer",
+    "img": "https://i.imgur.com/1MnNZE3.jpg",
+    "Totalstock": 0,
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+    "name": "Kids's Shorts",
+    "sale": true,
+    "DealOfday": true,
+    "productId": "ANMOLGANGWAR",
+    "priceRange": "$0-$49",
+    "MrpPrice": 99.99,
+    "imgs": [
+      "https://i.imgur.com/ETqGxMl.jpg",
+      "https://i.imgur.com/hGjBJNQ.jpg"
+    ],
+    "averageRating": 3,
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "coouponcode": "coupon2", "discount": 20 }
+    ],
+    "costToProduce": 1.04,
+    "Totalsold": 0,
+    "date": " new Date()",
+    "BrandName": "Shopie"
+  },
+  {
+    "SellerId": "Robin_anmol",
+    "gender": "men",
+    "percent": 20,
+    "productDetails": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+    "shortdescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+    "season": "Summer",
+    "img": "https://i.imgur.com/vCQFIko.jpg",
+    "Totalstock": 0,
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+    "name": "Kids's Shorts",
+    "sale": true,
+    "DealOfday": true,
+    "productId": "ANMOLGANGWAR",
+    "priceRange": "$0-$49",
+    "MrpPrice": 99.99,
+    "imgs": ["https://i.imgur.com/ETqGxMl.jpg"],
+    "averageRating": 3,
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "coouponcode": "coupon2", "discount": 20 }
+    ],
+    "costToProduce": 1.04,
+    "Totalsold": 0,
+    "date": " new Date()",
+    "BrandName": "Shopie"
+  },
+  {
+    "SellerId": "Robin_anmol",
+    "gender": "women",
+    "percent": 20,
+    "productDetails": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+    "shortdescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+    "season": "Summer",
+    "img": "https://i.imgur.com/ETqGxMl.jpg",
+    "Totalstock": 0,
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+    "name": "Kids's Shorts",
+    "sale": true,
+    "DealOfday": true,
+    "productId": "ANMOLGANGWAR",
+    "priceRange": "$0-$49",
+    "MrpPrice": 99.99,
+    "imgs": ["https://i.imgur.com/ETqGxMl.jpg"],
+    "averageRating": 3,
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "coouponcode": "coupon2", "discount": 20 }
+    ],
+    "costToProduce": 1.04,
+    "Totalsold": 0,
+    "date": " new Date()",
+    "BrandName": "Shopie"
+  },
+  {
+    "SellerId": "Robin_anmol",
+    "gender": "men",
+    "percent": 20,
+    "productDetails": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+    "shortdescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+    "season": "Summer",
+    "img": "https://i.imgur.com/dLgZZdl.jpg",
+    "Totalstock": 0,
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+    "name": "Kids's Shorts",
+    "sale": true,
+    "DealOfday": true,
+    "productId": "ANMOLGANGWAR",
+    "priceRange": "$0-$49",
+    "MrpPrice": 99.99,
+    "imgs": ["https://i.imgur.com/ETqGxMl.jpg"],
+    "averageRating": 3,
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "coouponcode": "coupon2", "discount": 20 }
+    ],
+    "costToProduce": 1.04,
+    "Totalsold": 0,
+    "date": " new Date()",
+    "BrandName": "Shopie"
+  },
+  {
+    "SellerId": "Robin_anmol",
+    "gender": "women",
+    "percent": 20,
+    "productDetails": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+    "shortdescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+    "season": "Summer",
+    "img": "https://i.imgur.com/5vk3hMn.jpg",
+    "Totalstock": 0,
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+    "name": "Kids's Shorts",
+    "sale": true,
+    "DealOfday": true,
+    "productId": "ANMOLGANGWAR",
+    "priceRange": "$0-$49",
+    "MrpPrice": 99.99,
+    "imgs": ["https://i.imgur.com/ETqGxMl.jpg"],
+    "averageRating": 3,
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "coouponcode": "coupon2", "discount": 20 }
+    ],
+    "costToProduce": 1.04,
+    "Totalsold": 0,
+    "date": " new Date()",
+    "BrandName": "Shopie"
+  },
+  {
+    "SellerId": "Robin_anmol",
+    "gender": "Girls",
+    "percent": 20,
+    "productDetails": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+    "shortdescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+    "season": "Summer",
+    "img": "https://i.imgur.com/hGjBJNQ.jpg",
+    "Totalstock": 0,
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+    "name": "Kids's Shorts",
+    "sale": true,
+    "DealOfday": true,
+    "productId": "ANMOLGANGWAR",
+    "priceRange": "$0-$49",
+    "MrpPrice": 99.99,
+    "imgs": [
+      "https://i.imgur.com/ETqGxMl.jpg",
+      "https://i.imgur.com/hGjBJNQ.jpg"
+    ],
+    "averageRating": 3,
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "coouponcode": "coupon2", "discount": 20 }
+    ],
+    "costToProduce": 1.04,
+    "Totalsold": 0,
+    "date": " new Date()",
+    "BrandName": "Shopie"
+  },
+  {
+    "SellerId": "Robin_anmol",
+    "gender": "Boys",
+    "percent": 20,
+    "productDetails": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+    "shortdescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+    "season": "Summer",
+    "img": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/10617856/2019/11/19/6dfc4e18-c303-41f1-b5db-0db695411a941574163077152-Roadster-Men-Jackets-1531574163076203-1.jpg",
+    "Totalstock": 0,
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+    "name": "Kids's Shorts",
+    "sale": true,
+    "DealOfday": true,
+    "productId": "ANMOLGANGWAR",
+    "priceRange": "$0-$49",
+    "MrpPrice": 99.99,
+    "imgs": [
+      "https://i.imgur.com/ETqGxMl.jpg",
+      "https://i.imgur.com/hGjBJNQ.jpg"
+    ],
+    "averageRating": 3,
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "coouponcode": "coupon2", "discount": 20 }
+    ],
+    "costToProduce": 1.04,
+    "Totalsold": 0,
+    "date": " new Date()",
+    "BrandName": "Shopie"
+  },
+  {
+    "SellerId": "Robin_anmol",
+    "gender": "men",
+    "percent": 20,
+    "productDetails": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+    "shortdescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+    "season": "Summer",
+    "img": "https://i.imgur.com/ETqGxMl.jpg",
+    "Totalstock": 0,
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+    "name": "Kids's Shorts",
+    "sale": true,
+    "DealOfday": true,
+    "productId": "ANMOLGANGWAR",
+    "priceRange": "$0-$49",
+    "MrpPrice": 99.99,
+    "imgs": [
+      "https://i.imgur.com/ETqGxMl.jpg",
+      "https://i.imgur.com/hGjBJNQ.jpg"
+    ],
+    "averageRating": 3,
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "coouponcode": "coupon2", "discount": 20 }
+    ],
+    "costToProduce": 1.04,
+    "Totalsold": 0,
+    "date": " new Date()",
+    "BrandName": "Shopie"
+  },
+  {
+    "SellerId": "Robin_anmol",
+    "gender": "Girls",
+    "percent": 20,
+    "productDetails": [
+      "Single-button curved cuffs",
+      "Curved hem",
+      "Machine wash",
+      "100% Cotton"
+    ],
+    "shortdescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora dolores blanditiis aliquid qui ab quam voluptate exercitationem consectetur",
+    "season": "Summer",
+    "img": "https://i.imgur.com/ETqGxMl.jpg",
+    "Totalstock": 0,
+    "sizes": [
+      {
+        "size": "S",
+        "colors": [
+          { "color": "gray", "stock": 10 },
+          { "color": "black", "stock": 0 }
+        ]
+      },
+      {
+        "size": "L",
+        "colors": [
+          { "color": "black", "stock": 5 },
+          { "color": "red", "stock": 0 }
+        ]
+      }
+    ],
+    "name": "Kids's Shorts",
+    "sale": true,
+    "DealOfday": true,
+    "productId": "ANMOLGANGWAR",
+    "priceRange": "$0-$49",
+    "MrpPrice": 99.99,
+    "imgs": [
+      "https://i.imgur.com/ETqGxMl.jpg",
+      "https://i.imgur.com/hGjBJNQ.jpg"
+    ],
+    "averageRating": 3,
+    "coupons": [
+      { "couponcode": "coupon1", "discount": 10 },
+      { "coouponcode": "coupon2", "discount": 20 }
+    ],
+    "costToProduce": 1.04,
+    "Totalsold": 0,
+    "date": " new Date()",
+    "BrandName": "Shopie"
+  }
+]
