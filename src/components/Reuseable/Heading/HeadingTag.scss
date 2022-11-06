@@ -1,0 +1,14 @@
+@use "../../../scss/" as *;
+
+.headingtag__heading {
+  font-size: $base-size * 2;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: $black;
+  width: 100%;
+  @include flex(center, center);
+  margin: 2rem auto;
+  @include mobile {
+    display: none;
+  }
+}

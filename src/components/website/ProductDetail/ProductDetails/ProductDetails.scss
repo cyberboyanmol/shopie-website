@@ -325,6 +325,8 @@
     }
     .wishlistBtn {
       background-color: $white;
+      border: 2px solid $theme-color;
+      color: $theme-color;
 
       &:hover {
         background-color: $theme-color;

@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import { AllRoutes } from "../../../AppConstant";
 import ProductDetailPage from "../ProductDetail/ProductDetailPage";
 import WishList from "../WishList/WishList";
+import Cart from "../Cart/Cart";
 
 const Body = () => {
   const Home = lazy(() => import("../Home/Home"));
@@ -25,12 +26,14 @@ const Body = () => {
 
         <Route path="/product/:productId" element={<ProductDetailPage />} />
         <Route path="/Wishlist" element={<WishList />} />
+        <Route path="/cart" element={<Cart />} />
         {/* //
         cart page 
         checkout page 
          prodfile  page 5 
         
         */}
+        <Route path="/*" element={<h1>PAge not found</h1>} />
       </Routes>
 
       <Footer />

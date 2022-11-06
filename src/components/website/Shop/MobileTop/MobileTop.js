@@ -46,21 +46,23 @@ const MobileTop = (props) => {
           </Link>
         </div>
       </div>
-      <div className="breadcrumbs">
-        {Breadlink.map((breadItem, index) => {
-          if (breadItem.text) {
-            return (
-              <HashLink
-                key={index}
-                className="breadcrumb"
-                to={breadItem.link && `/${breadItem?.link}`}
-              >
-                <span>{breadItem.text}</span>
-              </HashLink>
-            );
-          }
-        })}
-      </div>
+      {Breadlink && (
+        <div className="breadcrumbs">
+          {Breadlink?.map((breadItem, index) => {
+            if (breadItem.text) {
+              return (
+                <HashLink
+                  key={index}
+                  className="breadcrumb"
+                  to={breadItem.link && `/${breadItem?.link}`}
+                >
+                  <span>{breadItem.text}</span>
+                </HashLink>
+              );
+            }
+          })}
+        </div>
+      )}
     </div>
   );
 };

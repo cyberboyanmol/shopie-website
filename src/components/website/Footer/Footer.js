@@ -3,9 +3,8 @@ import FooterPart from "./FooterPart/FooterPart";
 import "./Footer.scss";
 import { FooterLink } from "../../../AppConstant";
 
-
 const Footer = () => {
-  const columnsrow = FooterLink?.map((column,index) => {
+  const columnsrow = FooterLink?.map((column, index) => {
     return <FooterPart key={index} column={column} />;
   });
 

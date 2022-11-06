@@ -62,7 +62,7 @@ const ProductDetails = () => {
       </div>
       <span className="linegap"></span>
       {/* // coloring  this wills shows  on the baseis on size when one of the size is selected  */}
-      {!true && (
+      {true && (
         <div className="selectColor">
           <div className="selectTop">
             {" "}
@@ -98,7 +98,7 @@ const ProductDetails = () => {
           </div>
         </div>
       )}
-      {!true && <span className="linegap"></span>}
+      {true && <span className="linegap"></span>}
       {/* //
       Adding button for saving product to wishlist and add to cart
       */}
