@@ -3,4 +3,71 @@
 .CartProductContainer {
   width: 100%;
   margin: 1rem auto;
+
+  .CartContainer {
+    width: 80%;
+    margin: 1rem auto;
+    @include flex(flex-start, space-between);
+
+    gap: 2rem;
+    @include laptop {
+      width: 95%;
+    }
+    @include md-tablet {
+      width: 90%;
+      flex-direction: column;
+    }
+    .couponCode_laptophide {
+      display: none;
+      @include md-tablet {
+        border-radius: $border-radius;
+        padding: 1rem 2rem;
+        box-shadow: 0 1px 2px 0 rgb(32 32 32 / 16%);
+        @include flex();
+        width: 100%;
+      }
+    }
+  }
+  .Bag_Button_mobile {
+    display: none;
+    @include md-tablet {
+      z-index: 50;
+      width: 100%;
+      @include flex(center, space-between);
+      padding: 10px 20%;
+      @include mobile {
+        padding: 10px 20px;
+      }
+      position: fixed;
+      bottom: 0px;
+      background-color: $white;
+      box-shadow: 0 -2px 6px 0 rgb(0 0 0 / 16%);
+      .OrderDetails {
+        @include flex(flex-start, flex-start, column);
+        gap: 0.2rem;
+        .totalAomount {
+          font-size: $base-size;
+          font-weight: 700;
+        }
+        .viewDetail {
+          color: $green;
+        }
+      }
+      .checkout {
+        @include flex(center, space-between);
+        gap: 1rem;
+        outline: none;
+        border: none;
+        font-size: $base-size * 1.1;
+        border-radius: $border-radius;
+        padding: 1rem 2rem;
+        @include xs-mobile-width {
+          padding: 1rem;
+        }
+        background-color: $theme-color;
+        color: $white;
+        font-weight: 500;
+      }
+    }
+  }
 }

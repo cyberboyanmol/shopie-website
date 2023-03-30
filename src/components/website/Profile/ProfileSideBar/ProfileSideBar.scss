@@ -1,0 +1,108 @@
+@use "../../../../scss/" as *;
+
+.Profile_SideBar {
+  background-color: #f9f9f9;
+  border-radius: $border-radius;
+  width: 100%;
+  padding: 1rem;
+  @include mobile {
+    // width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    // height: 100%;
+  }
+  @include flex(flex-start, flex-start, column);
+  .Mobile_profile {
+    display: none;
+    @include mobile {
+      width: 100%;
+      gap: 2rem;
+      margin: 1rem 0;
+      @include xs-mobile-width {
+        gap: 1rem;
+      }
+      @include flex(center, flex-start);
+      .userImage {
+        width: 80px;
+        height: 80px;
+        @include xs-mobile-width {
+          width: 55px;
+          height: 55px;
+          font-size: 1.5rem;
+        }
+        border-radius: 50%;
+        background-color: $black;
+        color: $white;
+        font-size: 2.5rem;
+        font-weight: 900;
+        @include flex(center, center);
+        box-shadow: 2px 3px 6px 0 rgb(0 0 0 / 16%);
+      }
+      .userImage_name {
+        width: 80px;
+        height: 80px;
+        @include xs-mobile-width {
+          width: 55px;
+          height: 55px;
+        }
+        border-radius: 50%;
+        @include flex(center, center);
+        box-shadow: 2px 3px 6px 0 rgb(0 0 0 / 16%);
+      }
+      .userDetail {
+        @include flex(flex-start, flex-start, column);
+        .username {
+          font-size: $base-size * 1.1;
+          font-weight: 700;
+          @include xs-mobile-width {
+            font-size: $base-size * 0.9;
+          }
+        }
+        .useremail,
+        .phoneNo {
+          font-size: $base-size * 0.9;
+          @include xs-mobile-width {
+            font-size: $base-size * 0.7;
+          }
+        }
+      }
+    }
+  }
+  gap: 0.5rem;
+  .profile_link {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: $base-size;
+    border-radius: $border-radius;
+    @include flex(center, flex-start);
+    gap: 0.3rem;
+    text-transform: capitalize;
+    .icon {
+      font-size: $base-size * 1.1;
+    }
+    @include mobile {
+      font-size: $base-size * 1.2;
+      .icon {
+        font-size: $base-size * 1.2;
+      }
+    }
+  }
+  .logoutBtn {
+    margin-top: 1rem;
+
+    background-color: $black;
+    width: 100%;
+    @include mobile {
+      padding: 1rem;
+    }
+    &:hover {
+      background-color: $black;
+    }
+  }
+}
+
+.profile_link_active {
+  background-color: $theme-color;
+  //   opacity: 0.5;
+  color: $white;
+}

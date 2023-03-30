@@ -33,7 +33,9 @@ const Navbar = () => {
   const { pathname } = useLocation();
   // console.log(location);
   const ShowBottomNavigation =
-    pathname === "/website" || pathname === "/website/store";
+    pathname === "/website" ||
+    pathname === "/website/store" ||
+    pathname === "/website/profile";
 
   return (
     <React.Fragment>

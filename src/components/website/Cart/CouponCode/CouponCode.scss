@@ -1,0 +1,51 @@
+@use "../../../../scss/" as *;
+.Apply_Coupon_main {
+  width: 100%;
+  @include flex(flex-start, flex-start, column);
+  gap: 1rem;
+
+  .Apply_Coupon {
+    width: 100%;
+    @include flex(center, space-between);
+    font-size: $base-size;
+    font-weight: 700;
+    // padding-bottom: 10px;
+    cursor: pointer;
+  }
+  .coupon_code {
+    @include flex(center, space-between);
+    width: 100%;
+    position: relative;
+    .coupon_code_input {
+      width: 100%;
+      padding: 0.5rem 4.4rem 0.5rem 0.5rem;
+      font-size: $base-size * 0.9;
+      text-transform: uppercase;
+      background-color: #f9f9f9;
+      border: none;
+      &::placeholder {
+        font-size: $base-size * 0.7;
+        text-transform: capitalize;
+      }
+    }
+    .Apply_Coupon_btn {
+      padding: 0.5rem 0.8rem;
+      position: absolute;
+      background-color: $theme-color;
+      right: 0px;
+      outline: none;
+      border: none;
+      color: $white;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .CouponError {
+    font-size: $base-size * 0.8;
+    // color:$red
+    color: $green;
+  }
+}

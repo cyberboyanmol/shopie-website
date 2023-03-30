@@ -28,7 +28,7 @@ const NavRight = () => {
         </div>
 
         <NavLink
-          to={"/website/profile"}
+          to={"/website/profile/overview"}
           className={({ isActive }) => (isActive ? "nav_active" : "")}
         >
           <i className={`fal fa-user`}></i>

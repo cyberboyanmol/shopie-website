@@ -1,4 +1,4 @@
-import { AvatarGroup, Box, Button, LinearProgress } from "@mui/material";
+import { Box, Button, LinearProgress } from "@mui/material";
 import React from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import "./productRatingLeft.scss";
@@ -21,7 +21,7 @@ const ProductRatingLeft = () => {
         <Button
           variant="contained"
           sx={{
-            "&:hover": { background: "#fff", opacity: 0.9, color: "#000" },
+            "&:hover": { background: "#00BADB", opacity: 0.9, color: "#fff" },
             backgroundColor: `#00BADB`,
           }}
         >

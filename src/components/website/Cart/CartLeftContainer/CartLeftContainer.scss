@@ -1,0 +1,15 @@
+@use "../../../../scss/" as *;
+
+.CartLeftContainer {
+  width: 75%;
+  @include flex(flex-start, flex-start, column);
+  gap: 2rem;
+  @include md-tablet {
+    width: 100%;
+  }
+  .CartLeftContainer_product {
+    width: 100%;
+    @include flex(flex-start, flex-start, column);
+    gap: 2rem;
+  }
+}

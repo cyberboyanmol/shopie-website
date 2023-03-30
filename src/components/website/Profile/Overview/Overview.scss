@@ -1,0 +1,118 @@
+@use "../../../../scss/" as *;
+.userInfo {
+  font-size: $base-size * 1.5;
+  font-weight: 700;
+
+  text-transform: capitalize;
+  @include mobile {
+    display: none;
+  }
+}
+.overview {
+  width: 100%;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  @include flex(flex-start, space-evenly);
+  @include tablet {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .imageUpload {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    margin: 0 auto;
+    @include flex(center, center);
+    cursor: pointer;
+
+    img {
+      border-radius: 50%;
+      box-shadow: $imageShadow;
+      width: 100%;
+      height: 100%;
+      transition: all 0.2s ease;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .icon {
+      position: absolute;
+      z-index: -10;
+      transition: all 0.2s ease;
+    }
+    .icon_click {
+      z-index: 10;
+      font-size: 3rem;
+      color: $black;
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+  .userInformationEdit {
+    width: 50%;
+    @include tablet {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include sm-mobile {
+      width: 100%;
+    }
+    @include flex(flex-start, flex-start, column);
+    gap: 1rem;
+    .inputField {
+      @include flex(flex-start, flex-start, column);
+      gap: 0.5rem;
+      width: 100%;
+      .username {
+        font-size: $base-size;
+        font-weight: 700;
+        color: $theme-color;
+      }
+      .usernameInput {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 0.4rem 0;
+        font-size: $base-size;
+        font-family: "Nunito", sans-serif;
+        color: $black;
+        font-weight: 600;
+        background-color: transparent;
+        border-bottom: 1px solid $gray-text;
+        // border-radius: $border-radius;
+        &::placeholder {
+          font-weight: 400;
+          font-size: $base-size * 0.9;
+          text-transform: lowercase;
+        }
+      }
+    }
+    .radioGender {
+      width: 100%;
+      .username {
+        font-size: $base-size;
+        font-weight: 700;
+        color: $theme-color;
+      }
+      @include flex(flex-start, flex-start, column);
+      gap: 0.5rem;
+      .radio__group {
+        width: 100%;
+        @include flex(center, flex-start);
+      }
+    }
+    .Edit_Btn {
+      margin-top: 1rem;
+      background-color: $theme-color;
+      width: 60%;
+      @include tablet {
+        padding: 1rem;
+        width: 100%;
+      }
+      &:hover {
+        background-color: $theme-color;
+      }
+    }
+  }
+}
